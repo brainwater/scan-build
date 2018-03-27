@@ -301,7 +301,8 @@ def parse_bug_plist(filename):
             'bug_category': bug['category'],
             'bug_line': int(bug['location']['line']),
             'bug_path_length': int(bug['location']['col']),
-            'bug_file': files[int(bug['location']['file'])]
+            'bug_file': files[int(bug['location']['file'])],
+            'bug_description': bug['description']
         }
 
 
